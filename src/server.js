@@ -1,14 +1,13 @@
-// server configuration
+//Server configuration happens in server.js
 
 const express = require('express');
 
-//m make a server instance
-
+// make a server instance
 const app = express();
 
 app.get("/", (request, response) => {
     response.json({
-        message: "Hello World"
+        message: "Hello world"
     });
 });
 
